@@ -6,749 +6,689 @@
 
     <title>Herbal Plants | CSP Project</title>
 
+    <meta
+        name="description"
+        content="Herbal Plants Community Service Project - awareness, benefits, cultivation and conservation."
+    >
+
     <link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 </head>
 
 <body>
 
-    <!-- Loading Screen -->
+    <!-- LOADER -->
     <div id="loader">
-        <div class="loader-leaf">🌿</div>
+        <div class="loader-plant">🌿</div>
         <h2>Herbal Plants</h2>
-        <p>Loading Project...</p>
+        <p>Loading project...</p>
+        <div class="loader-line"></div>
     </div>
 
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
 
-            <div class="logo">
-                🌿 Herbal<span>Plants</span>
-            </div>
+    <!-- FLOATING LEAVES -->
+    <div class="floating-leaves">
+        <span>🍃</span>
+        <span>🌿</span>
+        <span>🍃</span>
+        <span>🌱</span>
+        <span>🍃</span>
+        <span>🌿</span>
+    </div>
 
-            <button class="menu-btn" id="menuBtn">☰</button>
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#objectives">Objectives</a></li>
-                <li><a href="#types">Types</a></li>
-                <li><a href="#uses">Uses</a></li>
-                <li><a href="#plants">Plants</a></li>
-                <li><a href="#cultivation">Cultivation</a></li>
-                <li><a href="#visit">Field Visit</a></li>
-            </ul>
+    <!-- NAVBAR -->
+    <header class="navbar">
 
+        <div class="logo">
+            <span>🌿</span>
+            Herbal Plants
+        </div>
+
+        <button class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#plants">Plants</a>
+            <a href="#problems">Problems</a>
+            <a href="#suggestions">Suggestions</a>
+            <a href="#learning">Learning</a>
+            <a href="#quiz">Quiz</a>
         </nav>
+
+        <div class="nav-actions">
+            <button id="themeBtn" title="Change theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button id="readBtn" title="Read page">
+                <i class="fa-solid fa-volume-high"></i>
+            </button>
+        </div>
+
     </header>
 
-    <!-- Hero -->
-    <section id="home" class="hero">
 
-        <div class="hero-content">
+    <!-- HERO -->
+    <main>
 
-            <div class="hero-badge">
-                🌱 Community Service Project
-            </div>
+        <section id="home" class="hero">
 
-            <h1>
-                Discover the World of
-                <span>Herbal Plants</span>
-            </h1>
+            <div class="hero-content">
 
-            <p>
-                Learn about useful herbal plants, their traditional uses,
-                cultivation, health benefits and importance in our daily life.
-            </p>
+                <div class="badge">
+                    🌱 Community Service Project
+                </div>
 
-            <div class="hero-buttons">
-                <a href="#about" class="btn primary-btn">
-                    Explore Project
-                </a>
+                <h1>
+                    Discover the World of
+                    <span>Herbal Plants</span>
+                </h1>
 
-                <a href="#plants" class="btn secondary-btn">
-                    View Plants
-                </a>
-            </div>
-
-        </div>
-
-        <div class="hero-plant">
-            <div class="leaf-circle">🌿</div>
-        </div>
-
-    </section>
-
-
-    <!-- About -->
-    <section id="about" class="section">
-
-        <div class="section-title">
-            <p>ABOUT PROJECT</p>
-            <h2>What Are Herbal Plants?</h2>
-        </div>
-
-        <div class="about-grid">
-
-            <div class="about-card">
-                <div class="icon">🌿</div>
-                <h3>Natural Plants</h3>
                 <p>
-                    Herbal plants are natural plants that contain useful
-                    compounds and are traditionally used for health purposes.
+                    Learn about medicinal plants, their benefits,
+                    cultivation, conservation and importance in our community.
                 </p>
+
+                <div class="hero-buttons">
+                    <a href="#plants" class="primary-btn">
+                        Explore Plants <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+
+                    <a href="#quiz" class="secondary-btn">
+                        Take Quiz <i class="fa-solid fa-brain"></i>
+                    </a>
+                </div>
+
+                <div class="live-info">
+                    <i class="fa-regular fa-clock"></i>
+                    <span id="dateTime">Loading date...</span>
+                </div>
+
             </div>
 
-            <div class="about-card">
-                <div class="icon">💚</div>
-                <h3>Natural Healing</h3>
-                <p>
-                    Many herbal plants are traditionally used in home remedies
-                    and natural health practices.
-                </p>
+
+            <div class="hero-visual">
+
+                <div class="plant-circle">
+                    <div class="big-leaf">🌿</div>
+                </div>
+
+                <div class="info-bubble bubble-one">
+                    🌱 Natural
+                </div>
+
+                <div class="info-bubble bubble-two">
+                    💚 Healthy
+                </div>
+
+                <div class="info-bubble bubble-three">
+                    🌍 Sustainable
+                </div>
+
             </div>
 
-            <div class="about-card">
-                <div class="icon">🌍</div>
-                <h3>Environment</h3>
-                <p>
-                    Growing herbal plants can support biodiversity and encourage
-                    more natural and organic farming practices.
-                </p>
-            </div>
-
-        </div>
-
-        <div class="info-box">
-
-            <h3>🌱 Introduction</h3>
-
-            <p>
-                Herbal plants have been used for thousands of years.
-                They are important in traditional systems such as Ayurveda,
-                Siddha and Unani. Herbal plants are also used in food,
-                oils, cosmetics and health products.
-            </p>
-
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- Objectives -->
-    <section id="objectives" class="section dark-section">
+        <!-- ABOUT -->
+        <section id="about" class="section">
 
-        <div class="section-title">
-            <p>PROJECT GOALS</p>
-            <h2>Our Objectives</h2>
-        </div>
-
-        <div class="objective-grid">
-
-            <div class="objective-card">
+            <div class="section-title">
                 <span>01</span>
-                <h3>Study Herbal Plants</h3>
-                <p>
-                    Learn about different medicinal herbal plants.
-                </p>
+                <h2>About Herbal Plants</h2>
+                <p>Understanding their importance</p>
             </div>
 
-            <div class="objective-card">
+            <div class="about-grid">
+
+                <div class="about-card main-about">
+                    <div class="card-icon">🌿</div>
+
+                    <h3>What are Herbal Plants?</h3>
+
+                    <p>
+                        Herbal plants are plants that can be used for
+                        traditional and medicinal purposes. They have been
+                        used by people for generations.
+                    </p>
+
+                    <p>
+                        Learning about these plants helps us understand
+                        their value and encourages their proper conservation.
+                    </p>
+                </div>
+
+
+                <div class="about-card">
+                    <div class="card-icon">💊</div>
+                    <h3>Medicinal Value</h3>
+                    <p>
+                        Many herbal plants are traditionally used for
+                        different health and wellness purposes.
+                    </p>
+                </div>
+
+
+                <div class="about-card">
+                    <div class="card-icon">🌍</div>
+                    <h3>Environmental Value</h3>
+                    <p>
+                        Plants support biodiversity and contribute to
+                        a healthy environment.
+                    </p>
+                </div>
+
+
+                <div class="about-card">
+                    <div class="card-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Community Value</h3>
+                    <p>
+                        Herbal plants can support community awareness,
+                        home gardening and traditional knowledge.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PLANT EXPLORER -->
+        <section id="plants" class="section plant-section">
+
+            <div class="section-title">
                 <span>02</span>
-                <h3>Understand Benefits</h3>
-                <p>
-                    Understand the traditional health benefits of plants.
-                </p>
+                <h2>Plant Explorer</h2>
+                <p>Search and explore selected herbal plants</p>
             </div>
 
-            <div class="objective-card">
-                <span>03</span>
-                <h3>Learn Cultivation</h3>
-                <p>
-                    Learn simple methods for growing herbal plants.
-                </p>
-            </div>
 
-            <div class="objective-card">
-                <span>04</span>
-                <h3>Create Awareness</h3>
-                <p>
-                    Create awareness about the importance of herbal plants.
-                </p>
-            </div>
+            <div class="search-box">
 
-            <div class="objective-card">
-                <span>05</span>
-                <h3>Protect Nature</h3>
-                <p>
-                    Encourage people to protect plants and the environment.
-                </p>
-            </div>
+                <i class="fa-solid fa-magnifying-glass"></i>
 
-        </div>
+                <input
+                    type="text"
+                    id="plantSearch"
+                    placeholder="Search plant name..."
+                >
 
-    </section>
-
-
-    <!-- History -->
-    <section class="section">
-
-        <div class="section-title">
-            <p>FROM THE PAST</p>
-            <h2>History of Herbal Plants</h2>
-        </div>
-
-        <div class="history">
-
-            <div class="history-item">
-                <div class="history-number">01</div>
-                <div>
-                    <h3>Ancient India</h3>
-                    <p>
-                        Herbal plants were traditionally used for health
-                        and natural remedies.
-                    </p>
-                </div>
-            </div>
-
-            <div class="history-item">
-                <div class="history-number">02</div>
-                <div>
-                    <h3>Ayurveda</h3>
-                    <p>
-                        Ayurveda developed a large knowledge system based
-                        on natural plants and traditional healing.
-                    </p>
-                </div>
-            </div>
-
-            <div class="history-item">
-                <div class="history-number">03</div>
-                <div>
-                    <h3>Traditional Knowledge</h3>
-                    <p>
-                        Different cultures including China, Egypt and Greece
-                        also used herbal plants.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Types -->
-    <section id="types" class="section light-green">
-
-        <div class="section-title">
-            <p>CLASSIFICATION</p>
-            <h2>Types of Herbal Plants</h2>
-        </div>
-
-        <div class="type-grid">
-
-            <div class="type-card">
-                <div class="type-icon">🌿</div>
-                <h3>Medicinal Herbs</h3>
-                <p>Tulasi and Aloe Vera</p>
-            </div>
-
-            <div class="type-card">
-                <div class="type-icon">🌱</div>
-                <h3>Aromatic Plants</h3>
-                <p>Mint and Lemongrass</p>
-            </div>
-
-            <div class="type-card">
-                <div class="type-icon">🍃</div>
-                <h3>Culinary Plants</h3>
-                <p>Coriander and Curry Leaves</p>
-            </div>
-
-            <div class="type-card">
-                <div class="type-icon">🌳</div>
-                <h3>Medicinal Trees</h3>
-                <p>Neem and Amla</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Uses -->
-    <section id="uses" class="section">
-
-        <div class="section-title">
-            <p>EVERYDAY USE</p>
-            <h2>Uses of Herbal Plants</h2>
-        </div>
-
-        <div class="uses-grid">
-
-            <div class="use-card">
-                <div>🤧</div>
-                <h3>Cold & Cough</h3>
-                <p>Tulasi and Ginger are traditionally used for cold and cough.</p>
-            </div>
-
-            <div class="use-card">
-                <div>🧴</div>
-                <h3>Skin Care</h3>
-                <p>Aloe Vera and Neem are commonly used in skin care.</p>
-            </div>
-
-            <div class="use-card">
-                <div>🍵</div>
-                <h3>Digestion</h3>
-                <p>Mint and Ginger are traditionally used to support digestion.</p>
-            </div>
-
-            <div class="use-card">
-                <div>💚</div>
-                <h3>Immunity</h3>
-                <p>Amla, Turmeric and Tulsi are traditionally associated with immunity.</p>
-            </div>
-
-            <div class="use-card">
-                <div>😌</div>
-                <h3>Stress</h3>
-                <p>Ashwagandha and Lemongrass are traditionally used for relaxation.</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Daily Life -->
-    <section class="section daily-section">
-
-        <div class="daily-content">
-
-            <div>
-                <div class="section-title left-title">
-                    <p>IN OUR LIFE</p>
-                    <h2>Herbal Plants in Daily Life</h2>
-                </div>
-
-                <p class="large-text">
-                    Herbal plants are not only used for traditional remedies.
-                    They are also part of everyday life.
-                </p>
-            </div>
-
-            <div class="daily-list">
-
-                <div>🍵 <span>Herbal Tea</span></div>
-                <div>🍛 <span>Cooking Spices</span></div>
-                <div>🧴 <span>Skin Care</span></div>
-                <div>💆 <span>Hair Oils</span></div>
-                <div>🌿 <span>Home Remedies</span></div>
+                <button id="clearSearch">
+                    Clear
+                </button>
 
             </div>
 
-        </div>
 
-    </section>
+            <div class="plant-filters">
 
+                <button class="filter-btn active" data-filter="all">
+                    All
+                </button>
 
-    <!-- Important Plants -->
-    <section id="plants" class="section">
+                <button class="filter-btn" data-filter="leaf">
+                    🌿 Leaves
+                </button>
 
-        <div class="section-title">
-            <p>PLANT STUDY</p>
-            <h2>Important Herbal Plants</h2>
-        </div>
+                <button class="filter-btn" data-filter="flower">
+                    🌸 Flowers
+                </button>
 
-        <div class="plant-grid">
+                <button class="filter-btn" data-filter="root">
+                    🌱 Roots
+                </button>
 
-            <!-- Neem -->
-            <article class="plant-card">
-
-                <div class="plant-image neem">
-                    🌳
-                </div>
-
-                <div class="plant-content">
-
-                    <span class="scientific">
-                        Azadirachta indica
-                    </span>
-
-                    <h3>Neem</h3>
-
-                    <p>
-                        Neem is an important medicinal tree.
-                        It is traditionally used for skin care,
-                        dental hygiene and natural pest control.
-                    </p>
-
-                    <div class="tags">
-                        <span>Skin Care</span>
-                        <span>Dental</span>
-                        <span>Natural Pesticide</span>
-                    </div>
-
-                </div>
-
-            </article>
+            </div>
 
 
-            <!-- Tulsi -->
-            <article class="plant-card">
+            <div class="plant-grid" id="plantGrid">
 
-                <div class="plant-image tulsi">
-                    🌿
-                </div>
+                <article
+                    class="plant-card"
+                    data-name="tulsi holy basil"
+                    data-type="leaf"
+                >
 
-                <div class="plant-content">
+                    <div class="plant-icon">🌿</div>
 
-                    <span class="scientific">
-                        Ocimum tenuiflorum
-                    </span>
+                    <span class="plant-tag">Leaf</span>
 
                     <h3>Tulsi</h3>
 
-                    <p>
-                        Tulsi is commonly used in traditional home remedies.
-                        Tulsi leaves are also used to prepare herbal tea.
+                    <p class="scientific">
+                        Ocimum tenuiflorum
                     </p>
 
-                    <div class="tags">
-                        <span>Herbal Tea</span>
-                        <span>Cold & Cough</span>
-                        <span>Traditional Use</span>
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <!-- Drumstick -->
-            <article class="plant-card">
-
-                <div class="plant-image moringa">
-                    🌳
-                </div>
-
-                <div class="plant-content">
-
-                    <span class="scientific">
-                        Moringa oleifera
-                    </span>
-
-                    <h3>Drumstick Tree</h3>
-
                     <p>
-                        Drumstick is also called the Miracle Tree.
-                        Its leaves are used as a nutritious food.
+                        Commonly known as Holy Basil and traditionally
+                        valued for its many uses.
                     </p>
 
-                    <div class="tags">
-                        <span>Nutrition</span>
-                        <span>Leaves</span>
-                        <span>Easy to Grow</span>
-                    </div>
+                    <button
+                        class="plant-btn"
+                        data-plant="Tulsi"
+                    >
+                        View Details
+                    </button>
 
-                </div>
-
-            </article>
-
-        </div>
-
-    </section>
+                </article>
 
 
-    <!-- Ayurveda -->
-    <section class="section ayurveda-section">
+                <article
+                    class="plant-card"
+                    data-name="neem"
+                    data-type="leaf"
+                >
 
-        <div class="ayurveda-box">
+                    <div class="plant-icon">🌳</div>
 
-            <div class="ayurveda-icon">🪷</div>
+                    <span class="plant-tag">Leaf</span>
 
-            <div>
-                <p class="small-heading">TRADITIONAL KNOWLEDGE</p>
+                    <h3>Neem</h3>
 
-                <h2>Herbal Plants in Ayurveda</h2>
+                    <p class="scientific">
+                        Azadirachta indica
+                    </p>
 
-                <p>
-                    Herbal plants have an important place in Ayurveda.
-                    They are traditionally used in oils, powders, teas
-                    and other preparations.
-                </p>
+                    <p>
+                        A traditional plant valued for its various
+                        household and medicinal uses.
+                    </p>
 
-                <div class="ayurveda-points">
-                    <span>✓ Natural healing</span>
-                    <span>✓ Traditional knowledge</span>
-                    <span>✓ Health practices</span>
-                </div>
-            </div>
+                    <button
+                        class="plant-btn"
+                        data-plant="Neem"
+                    >
+                        View Details
+                    </button>
 
-        </div>
-
-    </section>
-
-
-    <!-- Cultivation -->
-    <section id="cultivation" class="section light-green">
-
-        <div class="section-title">
-            <p>HOW TO GROW</p>
-            <h2>Cultivation Steps</h2>
-        </div>
-
-        <div class="steps">
-
-            <div class="step">
-                <span>01</span>
-                <h3>Prepare Soil</h3>
-                <p>Prepare suitable soil for planting.</p>
-            </div>
-
-            <div class="step">
-                <span>02</span>
-                <h3>Select Seeds</h3>
-                <p>Choose healthy seeds or planting material.</p>
-            </div>
-
-            <div class="step">
-                <span>03</span>
-                <h3>Plant</h3>
-                <p>Plant the seeds properly in the soil.</p>
-            </div>
-
-            <div class="step">
-                <span>04</span>
-                <h3>Water</h3>
-                <p>Give the plants suitable amounts of water.</p>
-            </div>
-
-            <div class="step">
-                <span>05</span>
-                <h3>Organic Fertilizer</h3>
-                <p>Use organic fertilizer when required.</p>
-            </div>
-
-            <div class="step">
-                <span>06</span>
-                <h3>Harvest</h3>
-                <p>Harvest the plant parts at the proper time.</p>
-            </div>
-
-        </div>
-
-    </section>
+                </article>
 
 
-    <!-- Environmental Benefits -->
-    <section class="section">
+                <article
+                    class="plant-card"
+                    data-name="aloe vera"
+                    data-type="leaf"
+                >
 
-        <div class="section-title">
-            <p>PROTECT NATURE</p>
-            <h2>Environmental Benefits</h2>
-        </div>
+                    <div class="plant-icon">🪴</div>
 
-        <div class="environment-grid">
+                    <span class="plant-tag">Leaf</span>
 
-            <div class="environment-card">
-                <span>🦋</span>
-                <h3>Biodiversity</h3>
-                <p>Herbal plants can support biodiversity.</p>
-            </div>
+                    <h3>Aloe Vera</h3>
 
-            <div class="environment-card">
-                <span>🐝</span>
-                <h3>Pollinators</h3>
-                <p>Plants can provide support for pollinators.</p>
-            </div>
+                    <p class="scientific">
+                        Aloe vera
+                    </p>
 
-            <div class="environment-card">
-                <span>🌱</span>
-                <h3>Organic Farming</h3>
-                <p>Herbal plants can encourage natural farming practices.</p>
-            </div>
+                    <p>
+                        A popular plant traditionally used for
+                        skin care and other household purposes.
+                    </p>
 
-            <div class="environment-card">
-                <span>🌍</span>
-                <h3>Less Pollution</h3>
-                <p>Organic practices can help reduce chemical pollution.</p>
-            </div>
+                    <button
+                        class="plant-btn"
+                        data-plant="Aloe Vera"
+                    >
+                        View Details
+                    </button>
 
-        </div>
-
-    </section>
+                </article>
 
 
-    <!-- Case Studies -->
-    <section class="section dark-section">
+                <article
+                    class="plant-card"
+                    data-name="ginger"
+                    data-type="root"
+                >
 
-        <div class="section-title">
-            <p>CASE STUDIES</p>
-            <h2>Our Plant Examples</h2>
-        </div>
+                    <div class="plant-icon">🌱</div>
 
-        <div class="case-grid">
+                    <span class="plant-tag">Root</span>
 
-            <div class="case-card">
+                    <h3>Ginger</h3>
 
-                <div class="case-number">01</div>
+                    <p class="scientific">
+                        Zingiber officinale
+                    </p>
 
-                <h3>Neem Case Study</h3>
+                    <p>
+                        A commonly used plant valued as a food ingredient
+                        and in traditional practices.
+                    </p>
 
-                <p>
-                    Chemical pesticides can harm the environment.
-                    Neem-based organic pesticides can be used as a
-                    natural option for pest control.
-                </p>
+                    <button
+                        class="plant-btn"
+                        data-plant="Ginger"
+                    >
+                        View Details
+                    </button>
 
-                <ul>
-                    <li>Natural pest control</li>
-                    <li>Eco-friendly farming</li>
-                    <li>Supports healthier farming practices</li>
-                </ul>
-
-            </div>
+                </article>
 
 
-            <div class="case-card">
+                <article
+                    class="plant-card"
+                    data-name="turmeric"
+                    data-type="root"
+                >
 
-                <div class="case-number">02</div>
+                    <div class="plant-icon">🌱</div>
 
-                <h3>Tulsi Case Study</h3>
+                    <span class="plant-tag">Root</span>
 
-                <p>
-                    Tulsi leaves are traditionally used to prepare
-                    herbal tea during seasonal cold and cough.
-                </p>
+                    <h3>Turmeric</h3>
 
-                <ul>
-                    <li>Easy to grow</li>
-                    <li>Used in herbal tea</li>
-                    <li>Traditional home use</li>
-                </ul>
+                    <p class="scientific">
+                        Curcuma longa
+                    </p>
+
+                    <p>
+                        A widely used plant known for its traditional,
+                        culinary and cultural importance.
+                    </p>
+
+                    <button
+                        class="plant-btn"
+                        data-plant="Turmeric"
+                    >
+                        View Details
+                    </button>
+
+                </article>
+
+
+                <article
+                    class="plant-card"
+                    data-name="hibiscus"
+                    data-type="flower"
+                >
+
+                    <div class="plant-icon">🌺</div>
+
+                    <span class="plant-tag">Flower</span>
+
+                    <h3>Hibiscus</h3>
+
+                    <p class="scientific">
+                        Hibiscus rosa-sinensis
+                    </p>
+
+                    <p>
+                        A commonly grown flowering plant with traditional
+                        and ornamental value.
+                    </p>
+
+                    <button
+                        class="plant-btn"
+                        data-plant="Hibiscus"
+                    >
+                        View Details
+                    </button>
+
+                </article>
 
             </div>
 
-
-            <div class="case-card">
-
-                <div class="case-number">03</div>
-
-                <h3>Drumstick Case Study</h3>
-
-                <p>
-                    Drumstick leaves can provide a low-cost nutritious
-                    food source and can be grown at home.
-                </p>
-
-                <ul>
-                    <li>Nutritious leaves</li>
-                    <li>Low-cost food</li>
-                    <li>Easy to grow</li>
-                </ul>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Preparation -->
-    <section class="section">
-
-        <div class="section-title">
-            <p>PREPARATION</p>
-            <h2>Common Preparations</h2>
-        </div>
-
-        <div class="preparation-grid">
-
-            <div>
-                <span>🌿</span>
-                <h3>Powder</h3>
-                <p>Example: Turmeric</p>
-            </div>
-
-            <div>
-                <span>🥤</span>
-                <h3>Juice</h3>
-                <p>Example: Aloe Vera</p>
-            </div>
-
-            <div>
-                <span>🍵</span>
-                <h3>Tea</h3>
-                <p>Example: Tulsi</p>
-            </div>
-
-            <div>
-                <span>🧴</span>
-                <h3>Oil</h3>
-                <p>Example: Neem</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Field Visit -->
-    <section id="visit" class="field-visit">
-
-        <div class="field-content">
-
-            <span class="visit-badge">
-                📍 COMMUNITY SERVICE PROJECT
-            </span>
-
-            <h2>Field Visit</h2>
-
-            <h3>Kurabala Kota</h3>
-
-            <p>
-                Our field visit focused on understanding herbal plants,
-                their uses and their importance in the community.
+            <p id="noPlants" class="no-results">
+                No plants found.
             </p>
 
-            <div class="visit-details">
-                <div>
-                    <strong>🌿</strong>
-                    <span>Herbal Plant Study</span>
-                </div>
+        </section>
 
-                <div>
-                    <strong>👥</strong>
-                    <span>Community Awareness</span>
-                </div>
 
-                <div>
-                    <strong>📚</strong>
-                    <span>Project Learning</span>
-                </div>
+        <!-- BENEFITS -->
+        <section class="section">
+
+            <div class="section-title">
+                <span>03</span>
+                <h2>Key Benefits</h2>
+                <p>Why herbal plants are important</p>
             </div>
 
-        </div>
+            <div class="benefit-grid">
 
-    </section>
+                <div class="benefit-card">
+                    <div>💊</div>
+                    <h3>Medicinal Knowledge</h3>
+                    <p>
+                        Helps us learn about traditional uses of plants.
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <div>🌱</div>
+                    <h3>Home Gardening</h3>
+                    <p>
+                        Encourages people to grow useful plants at home.
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <div>🌍</div>
+                    <h3>Conservation</h3>
+                    <p>
+                        Helps protect plant diversity and traditional knowledge.
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <div>👥</div>
+                    <h3>Community Awareness</h3>
+                    <p>
+                        Helps people understand the importance of herbal plants.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
 
 
-    <!-- Conclusion -->
-    <section class="section conclusion">
+        <!-- PROBLEMS -->
+        <section id="problems" class="section dark-section">
 
-        <div class="conclusion-box">
+            <div class="section-title">
+                <span>04</span>
+                <h2>Problems & Challenges</h2>
+                <p>Important issues identified during our study</p>
+            </div>
 
-            <div class="big-leaf">🌿</div>
+            <div class="problem-grid">
 
-            <h2>Conclusion</h2>
+                <div class="problem-card">
+                    <span>01</span>
+                    <div class="problem-icon">💡</div>
+                    <h3>Lack of Awareness</h3>
+                    <p>
+                        Many people do not know the importance and
+                        medicinal uses of herbal plants.
+                    </p>
+                </div>
 
-            <p>
-                Herbal plants are an important part of traditional knowledge
- 
+                <div class="problem-card">
+                    <span>02</span>
+                    <div class="problem-icon">🧪</div>
+                    <h3>Chemical Pesticides</h3>
+                    <p>
+                        Excessive chemical pesticides can harm soil,
+                        biodiversity and the environment.
+                    </p>
+                </div>
+
+                <div class="problem-card">
+                    <span>03</span>
+                    <div class="problem-icon">🌱</div>
+                    <h3>Limited Availability</h3>
+                    <p>
+                        Some useful herbal plants are not easily
+                        available in every area.
+                    </p>
+                </div>
+
+                <div class="problem-card">
+                    <span>04</span>
+                    <div class="problem-icon">👨‍🏫</div>
+                    <h3>Need for Guidance</h3>
+                    <p>
+                        Proper guidance is important for correct
+                        identification and safe use.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SUGGESTIONS -->
+        <section id="suggestions" class="section">
+
+            <div class="section-title">
+                <span>05</span>
+                <h2>Suggestions & Recommendations</h2>
+                <p>Simple steps for a better future</p>
+            </div>
+
+            <div class="suggestion-list">
+
+                <div class="suggestion-item">
+                    <div class="suggestion-number">01</div>
+                    <div>
+                        <h3>Increase Awareness</h3>
+                        <p>
+                            Create awareness about the medicinal value
+                            and conservation of herbal plants.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="suggestion-item">
+                    <div class="suggestion-number">02</div>
+                    <div>
+                        <h3>Promote Cultivation</h3>
+                        <p>
+                            Encourage sustainable cultivation and
+                            home gardening.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="suggestion-item">
+                    <div class="suggestion-number">03</div>
+                    <div>
+                        <h3>Reduce Chemicals</h3>
+                        <p>
+                            Reduce chemical pesticides and encourage
+                            natural methods.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="suggestion-item">
+                    <div class="suggestion-number">04</div>
+                    <div>
+                        <h3>Expert Guidance</h3>
+                        <p>
+                            Provide proper training and support from
+                            experts and institutions.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LEARNING -->
+        <section id="learning" class="section learning-section">
+
+            <div class="section-title">
+                <span>06</span>
+                <h2>Student Learning</h2>
+                <p>What we learned through the project</p>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">01</div>
+                    <div class="timeline-content">
+                        <h3>Plant Identification</h3>
+                        <p>
+                            Identified selected herbal plants during the study.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">02</div>
+                    <div class="timeline-content">
+                        <h3>Scientific Names & Uses</h3>
+                        <p>
+                            Learned scientific names and common uses.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">03</div>
+                    <div class="timeline-content">
+                        <h3>Cultivation Methods</h3>
+                        <p>
+                            Understood basic cultivation methods.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">04</div>
+                    <div class="timeline-content">
+                        <h3>Observation & Documentation</h3>
+                        <p>
+                            Improved observation and documentation skills.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">05</div>
+                    <div class="timeline-content">
+                        <h3>Community Needs</h3>
+                        <p>
+                            Learned how plants can support community needs.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUIZ -->
+        <section id="quiz" class="section quiz-section">
+
+            <div class="section-title">
+                <span>07</span>
+                <h2>Herbal Plants Quiz</h2>
+                <p>Test your knowledge</p>
+            </div>
+
+            <div class="quiz-box">
+
+                <div class="quiz-top">
+                    <span id="questionNumber">
+                        Question 1 of 5
+                    </span>
+
+           
